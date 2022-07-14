@@ -1,0 +1,7 @@
+@function get($object, $attribute) {
+  @return map-get($object, $attribute);
+}
+
+@function color($attribute) {
+  @return map-get($colors, $attribute);
+}

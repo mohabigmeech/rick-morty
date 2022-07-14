@@ -1,0 +1,26 @@
+html {
+  font-family: get($font, "primary"), get($font, "replace");
+  font-size: get($font, "root");
+}
+
+body {
+  font-family: get($font, "primary"), get($font, "secondary"),
+    get($font, "other");
+  font-size: get($font, "p");
+  color: color("black");
+}
+
+h1 {
+  font-size: get($font, "h1");
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: get($font, "h2");
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: get($font, "h3");
+  margin-bottom: 1em;
+}

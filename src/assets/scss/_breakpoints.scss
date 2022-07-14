@@ -1,0 +1,23 @@
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+);
+
+$xs-and-up: "only screen and (min-width : #{get($breakpoints, xs)})" !default;
+$sm-and-up: "only screen and (min-width : #{get($breakpoints, sm)+1})" !default;
+$md-and-up: "only screen and (min-width : #{get($breakpoints, md)+1})" !default;
+$lg-and-up: "only screen and (min-width : #{get($breakpoints, lg)+1})" !default;
+$xl-and-up: "only screen and (min-width : #{get($breakpoints, xl)+1})" !default;
+
+$sm-and-down: "only screen and (max-width : #{get($breakpoints, sm)})" !default;
+$md-and-down: "only screen and (max-width : #{get($breakpoints, md)})" !default;
+$lg-and-down: "only screen and (max-width : #{get($breakpoints, lg)})" !default;
+$xl-and-down: "only screen and (max-width : #{get($breakpoints, xl)})" !default;
+
+$xs-only: $sm-and-down;
+$sm-only: "only screen and (min-width : #{get($breakpoints, sm)+1}) and (max-width : #{get($breakpoints, md)})" !default;
+$md-only: "only screen and (min-width : #{get($breakpoints, md)+1}) and (max-width : #{get($breakpoints, lg)})" !default;
+$lg-only: "only screen and (min-width : #{get($breakpoints, lg)+1}) and (max-width : #{get($breakpoints, xl)})" !default;

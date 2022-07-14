@@ -1,0 +1,13 @@
+$other-font: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+  Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+$font: (
+  "primary": "Poppins",
+  "secondary": "Segoe UI",
+  "other": $other-font,
+  "root": 10px,
+  "h1": 3.2rem,
+  "h2": 2.6rem,
+  "h3": 1.8rem,
+  "p": 1.6rem,
+);
