@@ -23,7 +23,7 @@ import { RouterView } from "vue-router";
 import { ref } from "vue";
 
 const popinVisible = ref(false);
-function openPopin(e: any) {
+function openPopin(e: MouseEvent) {
   if (e.clientY < 0) {
     popinVisible.value = true;
   }

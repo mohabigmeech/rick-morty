@@ -1,10 +1,12 @@
+# Rick & Morty Directory
+
 ![Preview](https://dl.airtable.com/.attachments/049b90b99246e3e4459024609493306a/0ba41430/ui-1.png)
+
+Rick & Morty Directory developing with [Vue 3](https://vuejs.org/) in [Vite](https://vitejs.dev/) for [Jellysmack](https://jellysmack.com/).
 
 View the [Demo](https://nodejs.org/en/)
 
-# Rick & Morty Directory
-
-Rick & Morty Directory developing with [Vue 3](https://vuejs.org/) in [Vite](https://vitejs.dev/) for [Jellysmack](https://jellysmack.com/).
+## Requirements
 
 ✅ Node requirements : [14.4.0](https://nodejs.org/en/)
 

@@ -119,7 +119,7 @@ onMounted(() => {
       top: 20%;
     }
     div {
-      color: #070522;
+      color: #0e0a3a;
       font-size: 50vh;
       font-weight: bold;
       font-style: italic;

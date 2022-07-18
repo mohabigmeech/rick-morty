@@ -12,7 +12,7 @@ const store = createStore({
   getters: {
     getCharacters: (state) => state.characters,
     getCharacterById: (state, id) =>
-      state.characters.find((character: any) => character.id === id),
+      state.characters.find((character: ICharacter) => character.id === id),
   },
   mutations: {
     SET_CHARACTER(state, character) {
@@ -39,7 +39,8 @@ const store = createStore({
       try {
         const data = await axios.get(api.toString());
         const pagination = data.data.info;
-        const characters = data.data.results.map((character: any) => {
+        const characters = data.data.results.map((character: IApiCharacter) => {
+          console.log(character);
           return {
             id: character.id,
             name: character.name,
@@ -83,5 +84,37 @@ const store = createStore({
     },
   },
 });
+
+export interface ICharacter {
+  id: number;
+  name: string;
+  status: string;
+  species: string;
+  gender: string;
+  origin: string;
+  location: string;
+  image: string;
+}
+
+export interface IApiCharacter {
+  id: number;
+  name: string;
+  status: "Dead" | "Alive" | "unknown";
+  species: string;
+  type: string;
+  gender: "female" | "male" | "genderless" | "unknown";
+  origin: {
+    name: string;
+    url: string;
+  };
+  location: {
+    name: string;
+    url: string;
+  };
+  image: string;
+  episode: string[];
+  url: string;
+  created: string;
+}
 
 export default store;
