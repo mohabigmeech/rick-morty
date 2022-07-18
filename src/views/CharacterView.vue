@@ -1,6 +1,6 @@
 <template>
   <div class="character-view">
-    <el-row justify="center">
+    <el-row justify="center" align="middle">
       <el-col class="character-view__infos" :span="22" :md="8">
         <h1>{{ character.name }}</h1>
         <ul>
@@ -115,6 +115,9 @@ onMounted(() => {
     transform: translateY(-50%);
     overflow: hidden;
     z-index: -1;
+    @media #{$md-and-down} {
+      top: 20%;
+    }
     div {
       color: #070522;
       font-size: 50vh;
@@ -126,7 +129,7 @@ onMounted(() => {
     }
   }
   .el-row {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 @keyframes textLoop {
