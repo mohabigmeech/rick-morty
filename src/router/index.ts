@@ -18,9 +18,6 @@ const router = createRouter({
       redirect: "/characters",
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
-    return { left: 0, top: 0 };
-  },
 });
 
 export default router;
