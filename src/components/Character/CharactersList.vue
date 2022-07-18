@@ -89,7 +89,7 @@ watch([inputSearch, inputStatus], () => {
 .characters-list {
   justify-content: center;
   &__search {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     margin-bottom: 3rem;
     @media #{$sm-and-down} {
