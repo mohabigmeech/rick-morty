@@ -12,7 +12,7 @@ const store = createStore({
   getters: {
     getCharacters: (state) => state.characters,
     getCharacterById: (state, id) =>
-      state.characters.find((character) => character.id === id),
+      state.characters.find((character: any) => character.id === id),
   },
   mutations: {
     SET_CHARACTER(state, character) {
@@ -37,9 +37,9 @@ const store = createStore({
       if (page) api.searchParams.append("page", page);
 
       try {
-        const data = await axios.get(api);
+        const data = await axios.get(api.toString());
         const pagination = data.data.info;
-        const characters = data.data.results.map((character) => {
+        const characters = data.data.results.map((character: any) => {
           return {
             id: character.id,
             name: character.name,
@@ -53,7 +53,7 @@ const store = createStore({
         });
         commit("SET_PAGINATION", pagination);
         commit("SET_CHARACTERS", characters);
-      } catch (error) {
+      } catch (error: any) {
         if (error.response.status === 404) {
           console.error("NO RESULTS");
           commit("SET_CHARACTERS", []);
@@ -65,7 +65,7 @@ const store = createStore({
     async fetchCharacterById({ commit }, id) {
       const api = new URL(`https://rickandmortyapi.com/api/character/${id}`);
       try {
-        const data = await axios.get(api);
+        const data = await axios.get(api.toString());
         const character = {
           id: data.data.id,
           name: data.data.name,
