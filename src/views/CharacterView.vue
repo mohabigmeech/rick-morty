@@ -77,10 +77,20 @@ onMounted(() => {
         font-size: 2rem;
       }
     }
+    a {
+      color: white;
+      @media #{$md-and-down} {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    }
   }
   &__image {
     display: flex;
     padding: 1rem;
+    @media #{$md-and-down} {
+      padding: 3rem 1rem 3rem;
+    }
     img {
       display: block;
       max-width: 100%;

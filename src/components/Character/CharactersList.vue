@@ -98,6 +98,9 @@ watch([inputSearch, inputStatus], () => {
     }
     h2 {
       margin: 0;
+      @media #{$sm-and-down} {
+        margin-bottom: 2rem;
+      }
     }
     form {
       display: flex;
