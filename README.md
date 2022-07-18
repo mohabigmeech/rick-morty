@@ -4,7 +4,7 @@
 
 Rick & Morty Directory developing with [Vue 3](https://vuejs.org/) in [Vite](https://vitejs.dev/) for [Jellysmack](https://jellysmack.com/).
 
-View the [Demo](https://nodejs.org/en/)
+View the [Demo](https://jellysmack.netlify.app/characters)
 
 ## Requirements
 
