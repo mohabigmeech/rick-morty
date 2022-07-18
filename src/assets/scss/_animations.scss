@@ -1,0 +1,35 @@
+.discover-leave-active {
+  animation-duration: 0.5s;
+  &:before {
+    animation: discoverLeave 0.5s;
+  }
+}
+
+.discover-enter-active {
+  animation-duration: 0.5s;
+  &:before {
+    top: 0;
+    animation: discoverEnter 0.5s;
+  }
+}
+
+@keyframes discoverLeave {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes discoverEnter {
+  from {
+    transform: translateY(0);
+    height: 100vh;
+  }
+  to {
+    transform: translateY(0);
+    height: 0;
+  }
+}

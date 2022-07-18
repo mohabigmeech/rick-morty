@@ -1,6 +1,6 @@
-# sandbox-vue3
+# Rick & Morty Directory
 
-Sandbox developing with [Vue 3](https://vuejs.org/) in [Vite](https://vitejs.dev/).
+Rick & Morty Directory developing with [Vue 3](https://vuejs.org/) in [Vite](https://vitejs.dev/) for [Jellysmack](https://jellysmack.com/).
 
 ✅ Node requirements : [14.4.0](https://nodejs.org/en/)
 
@@ -9,8 +9,6 @@ Sandbox developing with [Vue 3](https://vuejs.org/) in [Vite](https://vitejs.dev
 ## Modules
 
 - State Manager : [Vuex](https://vuex.vuejs.org/)
-
-- Unit Test : [Vitest](https://vitest.dev/)
 
 - Code Cleaner : [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
 
@@ -53,10 +51,4 @@ npm run clean
 
 ```sh
 npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
 ```

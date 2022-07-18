@@ -7,7 +7,8 @@ body {
   font-family: get($font, "primary"), get($font, "secondary"),
     get($font, "other");
   font-size: get($font, "p");
-  color: color("black");
+  background: color("black");
+  color: color("white");
 }
 
 h1 {
