@@ -40,7 +40,6 @@ const store = createStore({
         const data = await axios.get(api.toString());
         const pagination = data.data.info;
         const characters = data.data.results.map((character: IApiCharacter) => {
-          console.log(character);
           return {
             id: character.id,
             name: character.name,

@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="{ name: 'character', params: { id: props.id } }">
+  <router-link :to="characterLink">
     <div class="character-card">
       <img :src="props.image" :alt="props.name" />
       <p>{{ props.name }}</p>
@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps } from "vue";
+import { computed } from "vue";
 const props = defineProps({
   id: {
     type: Number,
@@ -22,6 +22,13 @@ const props = defineProps({
     type: String,
     required: true,
   },
+});
+
+const characterLink = computed(() => {
+  return {
+    name: "character",
+    params: { id: props.id },
+  };
 });
 </script>
 

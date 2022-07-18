@@ -21,6 +21,7 @@ declare module '@vue/runtime-core' {
     ElSelect: typeof import('element-plus/es')['ElSelect']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ThePopin: typeof import('./src/components/Common/ThePopin.vue')['default']
   }
 
 }

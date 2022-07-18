@@ -4,23 +4,13 @@
       <component @mouseout="openPopin" class="view" :is="Component" />
     </transition>
   </router-view>
-  <el-dialog v-model="popinVisible" width="55rem" custom-class="popin" center>
-    <img src="@/assets/images/seeyou.gif" />
-    <template #footer>
-      <span class="dialog-footer">
-        <a href="https://www.linkedin.com/in/mohamed-camara/" target="_blank">
-          <el-button type="primary">
-            Hope we can do cool stuff together 😁🙌
-          </el-button>
-        </a>
-      </span>
-    </template>
-  </el-dialog>
+  <Popin v-model="popinVisible"></Popin>
 </template>
 
 <script setup lang="ts">
 import { RouterView } from "vue-router";
 import { ref } from "vue";
+import Popin from "@/components/Common/ThePopin.vue";
 
 const popinVisible = ref(false);
 function openPopin(e: MouseEvent) {
@@ -54,14 +44,5 @@ body {
   background-position: center;
   transition: all 0.5s;
   z-index: 10;
-}
-
-.popin {
-  background: transparent;
-  box-shadow: none;
-}
-
-.el-overlay-dialog {
-  background: yellow;
 }
 </style>

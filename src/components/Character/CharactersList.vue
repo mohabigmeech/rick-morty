@@ -50,8 +50,8 @@
 <script setup lang="ts">
 import { ref, computed, watch } from "vue";
 import { useStore } from "vuex";
-import CharacterCard from "@/components/Character/CharacterCard.vue";
 import { Search } from "@element-plus/icons-vue";
+import CharacterCard from "@/components/Character/CharacterCard.vue";
 
 // Characters
 const store = useStore();

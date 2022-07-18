@@ -34,6 +34,7 @@ import { Back } from "@element-plus/icons-vue";
 
 const store = useStore();
 const route = useRoute();
+
 const id = computed(() => route.params.id);
 const character = computed(() => store.state.character);
 const isDead = computed(() => character.value.status === "Dead");
